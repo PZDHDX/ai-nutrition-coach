@@ -30,3 +30,6 @@ desktop.ini
 *.temp
 .cache/
 coverage/
+
+# Local Netlify folder
+.netlify
