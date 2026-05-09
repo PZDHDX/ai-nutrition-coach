@@ -4,15 +4,9 @@
   --green-soft: #e8f7ef;
   --mint: #f4fbf7;
   --orange: #ff9f43;
-  --orange-bright: #ffac4d;
-  --orange-soft: #fff6e8;
   --blue: #3b82f6;
   --yellow: #f5c542;
   --red: #ef6f6c;
-  --red-soft: #fff0ef;
-  --yellow-soft: #fff8df;
-  --blue-soft: #eef6ff;
-  --neutral-soft: #f3f6f5;
   --ink: #1f2933;
   --muted: #748093;
   --line: #e7edf0;
@@ -215,82 +209,6 @@ h3 {
   font-weight: 800;
 }
 
-.score-grid,
-.compact-score-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-  margin: 0 0 14px;
-}
-
-.compact-score-grid {
-  margin-bottom: 10px;
-}
-
-.score-card {
-  min-height: 108px;
-  padding: 11px;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  box-shadow: 0 8px 22px rgba(31, 41, 51, 0.05);
-}
-
-.score-card.green {
-  background: var(--green-soft);
-  border-color: rgba(34, 166, 107, 0.28);
-}
-
-.score-card.yellow {
-  background: var(--yellow-soft);
-  border-color: rgba(245, 197, 66, 0.42);
-}
-
-.score-card.red {
-  background: linear-gradient(180deg, #fff9ee 0%, var(--orange-soft) 100%);
-  border-color: rgba(255, 172, 77, 0.58);
-  box-shadow: 0 8px 22px rgba(255, 159, 67, 0.11);
-}
-
-.score-card.red .score-top strong,
-.score-card.red .score-status {
-  color: #b95d00;
-}
-
-.score-card.red p {
-  color: #82613d;
-}
-
-.score-card.neutral {
-  background: var(--neutral-soft);
-}
-
-.score-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6px;
-  font-size: 12px;
-  font-weight: 850;
-}
-
-.score-top strong {
-  font-size: 20px;
-}
-
-.score-status {
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 900;
-}
-
-.score-card p {
-  margin: 5px 0 0;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.35;
-}
-
 .card,
 .metric-card,
 .meal-card,
@@ -447,8 +365,6 @@ h3 {
 }
 
 .food-row button {
-  flex: 1;
-  min-width: 0;
   text-align: left;
   background: transparent;
 }
@@ -621,73 +537,7 @@ h3 {
   align-items: start;
 }
 
-.recognized-actions {
-  display: grid;
-  justify-items: end;
-  gap: 7px;
-}
-
-.risk-panel {
-  padding: 13px;
-  margin-top: 12px;
-  background: #fffaf3;
-  border: 1px solid rgba(255, 159, 67, 0.24);
-  border-radius: 16px;
-}
-
-.risk-panel p,
-.food-tip {
-  margin: 8px 0 0;
-  color: #596372;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.risk-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 8px;
-}
-
-.risk-tag,
-.risk-pill {
-  display: inline-flex;
-  align-items: center;
-  min-height: 24px;
-  padding: 4px 8px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 850;
-  line-height: 1.2;
-}
-
-.risk-tag.green,
-.risk-pill.green {
-  color: var(--green-dark);
-  background: var(--green-soft);
-}
-
-.risk-tag.yellow,
-.risk-pill.yellow {
-  color: #8a6400;
-  background: var(--yellow-soft);
-}
-
-.risk-tag.red,
-.risk-pill.red {
-  color: #a3413d;
-  background: var(--red-soft);
-}
-
-.risk-tag.neutral,
-.risk-pill.neutral {
-  color: var(--muted);
-  background: var(--neutral-soft);
-}
-
 .macro-line {
-  flex-wrap: wrap;
   margin-top: 10px;
   padding-top: 10px;
   border-top: 1px solid var(--line);
@@ -895,26 +745,6 @@ h3 {
   height: 100%;
   background: var(--green);
   border-radius: inherit;
-}
-
-.bar-line.nutrient {
-  grid-template-columns: 64px 1fr 64px;
-}
-
-.bar-line.nutrient.red .bar-track span {
-  background: var(--red);
-}
-
-.bar-line.nutrient.orange .bar-track span {
-  background: var(--orange);
-}
-
-.bar-line.nutrient.yellow .bar-track span {
-  background: var(--yellow);
-}
-
-.bar-line.nutrient.green .bar-track span {
-  background: var(--green);
 }
 
 .trend-chart {
