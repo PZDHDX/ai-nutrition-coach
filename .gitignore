@@ -5,6 +5,8 @@ node_modules/
 dist/
 build/
 out/
+.vite/
+.parcel-cache/
 
 # Logs
 *.log
@@ -32,4 +34,5 @@ desktop.ini
 coverage/
 
 # Local Netlify folder
-.netlify
+.netlify/
+.vercel/

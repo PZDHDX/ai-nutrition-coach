@@ -4,6 +4,8 @@
   --green-soft: #e8f7ef;
   --mint: #f4fbf7;
   --orange: #ff9f43;
+  --orange-bright: #ffac4d;
+  --orange-soft: #fff6e8;
   --blue: #3b82f6;
   --yellow: #f5c542;
   --red: #ef6f6c;
@@ -245,8 +247,18 @@ h3 {
 }
 
 .score-card.red {
-  background: var(--red-soft);
-  border-color: rgba(239, 111, 108, 0.34);
+  background: linear-gradient(180deg, #fff9ee 0%, var(--orange-soft) 100%);
+  border-color: rgba(255, 172, 77, 0.58);
+  box-shadow: 0 8px 22px rgba(255, 159, 67, 0.11);
+}
+
+.score-card.red .score-top strong,
+.score-card.red .score-status {
+  color: #b95d00;
+}
+
+.score-card.red p {
+  color: #82613d;
 }
 
 .score-card.neutral {
