@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI智能调香师</title>
-    <link rel="stylesheet" href="styles.css?v=20260509-material-library" />
+    <title>AI智能营养管家</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="phone-shell">
       <section class="app-screen">
         <header class="mini-header">
           <div>
-            <p class="mini-subtitle">AI智能调香师</p>
+            <p class="mini-subtitle">AI智能营养管家</p>
             <h1 id="screenTitle">首页</h1>
           </div>
           <button class="icon-button" id="messageButton" aria-label="消息">
@@ -24,8 +24,9 @@
         <div class="toast" id="toast" aria-live="polite"></div>
 
         <section class="view active" id="homeView" data-title="首页"></section>
-        <section class="view" id="recordsView" data-title="原料库"></section>
-        <section class="view" id="coachView" data-title="AI调香师"></section>
+        <section class="view" id="captureView" data-title="拍照识别"></section>
+        <section class="view" id="recordsView" data-title="饮食记录"></section>
+        <section class="view" id="coachView" data-title="AI营养师"></section>
         <section class="view" id="profileView" data-title="我的"></section>
 
         <nav class="tabbar" aria-label="底部导航">
@@ -40,14 +41,14 @@
               <path d="M5 4h14v17l-2-1.2-2 1.2-2-1.2-2 1.2-2-1.2-2 1.2Z" />
               <path d="M8 8h8M8 12h8M8 16h5" />
             </svg>
-            <span>原料库</span>
+            <span>记录</span>
           </button>
           <button class="tab" data-target="coachView">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3a7 7 0 0 0-7 7v3a4 4 0 0 0 4 4h1l2 3 2-3h1a4 4 0 0 0 4-4v-3a7 7 0 0 0-7-7Z" />
               <path d="M9 10h.01M15 10h.01M9 14h6" />
             </svg>
-            <span>AI调香师</span>
+            <span>AI营养师</span>
           </button>
           <button class="tab" data-target="profileView">
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -62,11 +63,11 @@
     <div class="modal-backdrop" id="detailModal" hidden>
       <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <button class="modal-close" id="closeModal" aria-label="关闭">×</button>
-        <h2 id="modalTitle">配方详情</h2>
+        <h2 id="modalTitle">食物详情</h2>
         <div id="modalBody"></div>
       </section>
     </div>
 
-    <script src="app.js?v=20260509-material-library"></script>
+    <script src="app.js"></script>
   </body>
 </html>

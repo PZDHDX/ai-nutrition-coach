@@ -1,6 +1,18 @@
 # ai-nutrition-coach
 
-一个微信小程序风格的 AI 智能调香师原型，面向香水爱好者和独立调香探索者，用于演示调香工作台、原料库、我的配方、AI 调香知识问答和个人偏好设置流程。
+AI 智能营养管家微信小程序风格原型，面向关注健康饮食、减脂、增肌、控糖和体重管理的人群，用于演示拍照识别食物、饮食记录、营养分析和 AI 营养师建议流程。
+
+## 项目边界
+
+- 本项目只维护「AI 智能营养管家」。
+- 不要在本项目加入调香、香水、精油、原料库等业务内容。
+- 调香师项目固定放在 `G:\my\code\ai-fragrance-lab`。
+- 部署前必须先运行 `npx netlify-cli status`，确认当前 Netlify 项目是 `ai-nutrition-coach-hdx`。
+
+## 预览铁律
+
+- 每次预览和验收页面效果时，优先使用 Codex in-app browser / browser-use 插件打开。
+- 如果浏览器插件不可用，必须明确说明原因，再给备用链接。
 
 ## 技术栈
 
@@ -15,11 +27,9 @@
 # 直接在浏览器打开 index.html
 ```
 
-## 预览铁律
-
-- 任何需要预览、验收、检查页面效果、打开本地页面、确认交互的问题，必须使用 Codex 的 in-app browser / browser-use 插件打开和操作页面。
-- 不要只给用户 `file://`、`localhost`、Netlify 链接让用户自己打开；除非用户明确要求手动链接。
-- 修改前端文件后，必须主动通过 browser-use 刷新或打开当前项目页面，并基于浏览器里的实际页面反馈结果。
-- 如果 browser-use 插件暂时不可用，必须明确说明“当前无法用 Codex 浏览器插件预览”，再给出备用链接。
-
 ## 部署
+
+```bash
+npx netlify-cli status
+npx netlify-cli deploy --prod --dir .
+```
